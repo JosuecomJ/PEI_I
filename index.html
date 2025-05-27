@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Lixo Eletrônico</title>
+
+</head>
+
+<body class="font-['Roboto',_sans-serif]">
+    <section class="min-h-screen bg-[var(--secction_slid)] text-white flex items-center">
+        <div id="carouselExample" class="carousel slide compact-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center g-4">
+                            <div class="col-12 col-lg-6 carousel-content">
+                                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                                    O QUE É LIXO ELETRÔNICO?
+                                </h2>
+                                <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+                                    Lixo eletrônico é qualquer dispositivo eletrônico ou elétrico descartado; como
+                                    celulares, computadores, baterias e
+                                    eletrodomésticos. Esses itens contêm materiais que podem ser reciclados, mas também
+                                    substâncias prejudiciais ao meio
+                                    ambiente se descartados de forma inadequada. O ideal é encaminhá-los para locais de
+                                    coleta especializados para
+                                    reciclagem segura.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <img src="descarte.svg" alt="Descarte eletrônico" class="img-fluid mx-auto"
+                                    style="max-height: 400px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center g-4">
+                            <div class="col-12 col-lg-6 carousel-content">
+                                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                                    IMPACTOS DO DESCARTE INCORRETO
+                                </h2>
+                                <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+                                    O descarte inadequado de lixo eletrônico pode liberar substâncias tóxicas como
+                                    chumbo, mercúrio, cádmio e berílio no
+                                    solo e na água, contaminando ecossistemas e representando riscos à saúde humana.
+                                    Além disso, a queima desses materiais
+                                    libera gases poluentes na atmosfera. A falta de reciclagem também significa a perda
+                                    de materiais valiosos que poderiam
+                                    ser reutilizados.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <img src="descarte.svg" alt="Impactos do descarte" class="img-fluid mx-auto"
+                                    style="max-height: 400px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles personalizados -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <img src="seta_esquerda.png" alt="Anterior" class="w-8 h-8 md:w-10 md:h-10">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <img src="seta_direita.png" alt="Próximo" class="w-8 h-8 md:w-10 md:h-10">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

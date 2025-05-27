@@ -1,0 +1,59 @@
+:root {
+            --secction_slid: #121321;
+            --main_color: #45A159;
+            --button_color: #35785B;
+        }
+
+        /* Estilos do Carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    opacity: 1;
+}
+
+.carousel-control-prev:hover img,
+.carousel-control-next:hover img {
+    opacity: 0.7;
+}
+
+.compact-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 90%;
+    transform: translateY(-5%);
+}
+
+.carousel-content {
+    padding: 2rem;
+}
+
+/* Posicionamento das setas */
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .carousel-control-prev {
+        left: 10px;
+    }
+    
+    .carousel-control-next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .compact-carousel {
+        padding: 1rem;
+    }
+    
+    .carousel-content {
+        padding: 1rem;
+    }
+}
