@@ -5,6 +5,29 @@
         }
 
         /* Estilos do Carrossel */
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    transition-duration: 0.8s !important;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.carousel-item {
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: flex !important;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 56px !important;
@@ -33,10 +56,21 @@
     width: 90%;
     transform: translateY(-5%);
     position: relative;
+    will-change: transform;
 }
 
 .carousel-content {
     padding: 2rem;
+    will-change: transform;
+}
+
+/* Melhorias na transição dos slides */
+.carousel-item > div {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-item:not(.active) > div {
+    opacity: 0.95;
 }
 
 /* Posicionamento das setas - fora da área de conteúdo */
