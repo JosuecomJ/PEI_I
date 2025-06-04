@@ -16,6 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- B. Leaflet com Openstreetmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
     <link rel="stylesheet" href="style.css">
     <title>Lixo Eletrônico</title>
@@ -92,6 +97,54 @@
         </div>
     </section>
 
+    <!--codigo do mapa-->
+    <section class="secMaps">
+
+        <!-- Titulo da Seção -->
+        <Div class="titleMaps">
+            <h1>PONTOS DE COLETA MAIS PRÓXIMOS</h1>
+        </Div>
+
+        <!-- Campo de pesquisa -->
+        <Div class="inputMaps ">
+            <h4 class="text-start">INSIRA O SEU ENDEREÇO:</h4>
+            <input type="text" id="searchInput" placeholder="Procurar por uma cidade aqui...">
+            <button class="btn btn-primary" id="searchBtn">Buscar</button>
+            <p class="inputParagrafo">
+                O nosso programa é uma solução super prática <br>
+                para ajudar as pessoas a descartarem<br>
+                corretamente seus resíduos! Ele utiliza o <br>
+                Google Maps para localizar os pontos de coleta <br>
+                de lixo eletrônico mais próximos, permitindo <br>
+                que os usuários encontrem facilmente locais <br>
+                especializados para o descarte responsável.</p>
+        </Div>
+
+        <!-- Campo do Mapa -->
+        <Div class="localMaps">
+            <div class="centroMaps" id="map">
+
+            </div>
+        </Div>
+
+
+
+    </section>
+
+    <!-- B. Leaflet com Openstreetmap -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
+
+    <!-- Importando javascript -->
+    <script src="main.js"></script>
     <!-- Bootstrap JS + Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
