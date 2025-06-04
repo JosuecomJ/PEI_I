@@ -7,44 +7,79 @@
         /* Estilos do Carrossel */
 .carousel-control-prev,
 .carousel-control-next {
-    width: auto;
+    width: 56px !important;
+    height: 56px !important;
     opacity: 1;
+    background: rgba(0,0,0,0.3) !important;
+    border-radius: 50% !important;
+    border: none !important;
+    z-index: 10 !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0,0,0,0.5) !important;
 }
 
 .carousel-control-prev:hover img,
 .carousel-control-next:hover img {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .compact-carousel {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 6rem; /* Aumentado padding lateral para dar espaço às setas */
     width: 90%;
     transform: translateY(-5%);
+    position: relative;
 }
 
 .carousel-content {
     padding: 2rem;
 }
 
-/* Posicionamento das setas */
+/* Posicionamento das setas - fora da área de conteúdo */
 .carousel-control-prev {
-    left: -50px;
+    left: 1rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    position: absolute !important;
 }
 
 .carousel-control-next {
-    right: -50px;
+    right: 1rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    position: absolute !important;
 }
 
 /* Responsividade */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+    .compact-carousel {
+        padding: 2rem 4rem;
+    }
+    
     .carousel-control-prev {
-        left: 10px;
+        left: 0.5rem !important;
     }
     
     .carousel-control-next {
-        right: 10px;
+        right: 0.5rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .compact-carousel {
+        padding: 2rem 1rem;
+    }
+    
+    .carousel-control-prev {
+        left: 0.25rem !important;
+    }
+    
+    .carousel-control-next {
+        right: 0.25rem !important;
     }
 }
 
