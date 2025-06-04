@@ -160,6 +160,18 @@ div >input, button{
     margin-top: 3vh;
     height: 50px;}
 
+/* Estilo para o botão de localização */
+#locationBtn {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#locationBtn:hover {
+    background-color: #198754 !important;
+    transform: scale(1.02);
+}
+
 .inputParagrafo{
     margin: 5vh 3vh;
     text-align: left;
