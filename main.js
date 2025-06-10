@@ -125,3 +125,18 @@ document.getElementById('searchInput').addEventListener('keydown', function(e){
 
 
 });
+
+// Carrega pontos de interesse de pontos.json
+fetch('pontos.json')
+  .then(res => res.json())
+  .then(data => {
+    const pts = data.points;
+    pts.forEach(p => {
+      L.marker([p.lat, p.long]).addTo(map)
+        .bindPopup(`<b>${p.name}</b><br>${p.address}`);
+    });
+    // Centraliza mapa no centro definido ou no primeiro ponto
+    const centro = data.center || { lat: pts[0].lat, long: pts[0].long };
+    map.setView([centro.lat, centro.long], 13);
+  })
+  .catch(err => console.error('Erro carregando pontos.json:', err));

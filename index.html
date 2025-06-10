@@ -119,38 +119,31 @@
     </section>
 
     <!--codigo do mapa-->
-    <section id="maps" class="secMaps">
-
-        <!-- Titulo da Seção -->
-        <Div class="titleMaps">
-            <h1>PONTOS DE COLETA MAIS PRÓXIMOS</h1>
-        </Div>
-
-        <!-- Campo de pesquisa -->
-        <Div class="inputMaps ">
-            <h4 class="text-start">INSIRA O SEU ENDEREÇO:</h4>
-            <input type="text" id="searchInput" placeholder="Procurar por uma cidade aqui...">
-            <button class="btn btn-primary" id="searchBtn">Buscar</button>
-            <button class="btn btn-success" id="locationBtn" title="Obter minha região">Minha Região</button>
-            <p class="inputParagrafo">
-                O nosso programa é uma solução super prática <br>
-                para ajudar as pessoas a descartarem<br>
-                corretamente seus resíduos! Ele utiliza o <br>
-                Google Maps para localizar os pontos de coleta <br>
-                de lixo eletrônico mais próximos, permitindo <br>
-                que os usuários encontrem facilmente locais <br>
-                especializados para o descarte responsável.</p>
-        </Div>
-
-        <!-- Campo do Mapa -->
-        <Div class="localMaps">
-            <div class="centroMaps" id="map">
-
+    <section id="maps" class="hero-section text-white d-flex align-items-center">
+        <div class="container py-5">
+            <h1 class="text-center mb-5">PONTOS DE COLETA MAIS PRÓXIMOS</h1>
+            <div class="row justify-content-center align-items-start g-4">
+                <div class="col-12 col-lg-6">
+                    <h4 class="mb-3">INSIRA O SEU ENDEREÇO:</h4>
+                    <div class="d-flex gap-2 mb-3">
+                        <input type="text" class="form-control" id="searchInput"
+                            placeholder="Procurar por uma cidade aqui...">
+                        <button class="btn btn-primary" id="searchBtn">Buscar</button>
+                        <button class="btn btn-success" id="locationBtn" title="Obter minha região">Minha
+                            Região</button>
+                    </div>
+                    <p class="lead">
+                        O nosso programa é uma solução prática para ajudar as pessoas a descartarem corretamente seus
+                        resíduos.
+                        Utilizamos o Leaflet com OpenStreetMap para localizar os pontos de coleta de lixo eletrônico
+                        mais próximos.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div id="map" class="w-100" style="height: 500px; border-radius: 8px;"></div>
+                </div>
             </div>
-        </Div>
-
-
-
+        </div>
     </section>
 
     <!-- B. Leaflet com Openstreetmap -->

@@ -155,61 +155,86 @@
  /* Est. Geral da Seção */
 .secMaps{
     width: 100%;
-    height: 100%;
+    height: 100vh; /* ocupa 100% da altura da viewport */
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-image: linear-gradient(to bottom, #45A159, #091F15);
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    font-family: roboto;
-    color: #fff;
-    line-height: 1.5em;}
-
- /* Est. do titulo */
-.titleMaps{
-    width: 100%;
-    text-align: center;
-    margin: 2vh 0;}
-
-/* Est. do input */
-.inputMaps{
-    justify-items: center;
-    width: 48%;}
-
-div >input, button{ 
-    margin-top: 3vh;
-    height: 50px;}
-
-/* Estilo para o botão de localização */
-#locationBtn {
-    margin-left: 10px;
-    font-size: 14px;
-    transition: all 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centraliza verticalmente */
+    padding: 2rem 0; /* padding vertical apenas */
+    background-image: linear-gradient(to bottom, #45A159, #2b6849);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
 }
 
-#locationBtn:hover {
-    background-color: #198754 !important;
-    transform: scale(1.02);
+/* Inputs e mapa ocupam largura total por padrão */
+.inputMaps, .localMaps {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
 }
 
-.inputParagrafo{
-    margin: 5vh 3vh;
-    text-align: left;
-    font-size: 20px;}
+/* Layout lado a lado em telas maiores */
+@media (min-width: 992px) {
+    .secMaps {
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+    .inputMaps, .localMaps {
+        width: 48%;
+        margin-bottom: 0;
+    }
+}
 
-input{
-    width: 300px;
-    height: 25px;
-    border-radius: 10px;}
+/* Estilo do container de inputs */
+.inputMaps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
 
-/* Est. do mapa */
-#map { height: 350px; }
+/* Input de pesquisa alinhado e com background */
+.inputMaps input {
+    width: 100%;
+    max-width: none;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
 
-.localMaps{
-    width: 48%;}
+/* Botões com altura consistente */
+.inputMaps .btn {
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
 
-.centroMaps{
+/* Ajusta parágrafo explicativo */
+.inputParagrafo {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilo do mapa responsivo */
+.localMaps .centroMaps, #map {
+    width: 100%;
+    height: 350px;
     border-radius: 3%;
-    margin: 5vh 3vh;}
+}
+@media (min-width: 768px) {
+    .localMaps .centroMaps, #map {
+        height: 400px;
+    }
+}
+@media (min-width: 992px) {
+    .localMaps .centroMaps, #map {
+        height: 500px;
+    }
+}

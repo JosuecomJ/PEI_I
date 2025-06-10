@@ -1,0 +1,139 @@
+{
+	"name": "Niterói",
+	"region": "RJ",
+	"country": "BR",
+	"center": {
+		"lat": -22.891565,
+		"long": -43.121123
+	},
+	"points": [
+		{
+			"name": "COOPERCANIT",
+			"address": "R. Pd. Anchieta, 72 - Centro - Niterói, RJ",
+			"tels": [
+				"(21) 3024-9496"
+			],
+			"lat": -22.89803505670745,
+			"long": -43.121865699999944
+		},
+		{
+			"name": "Escola Estadual Alcina Rodrigues Lima",
+			"address": "Estrada Francisco da Cruz Nunes, s/nº - Itaipu - Niterói, RJ",
+			"tels": [
+				"(21) 3701-2423",
+				"(21) 3701-2425"
+			],
+			"lat": -22.946456,
+			"long": -43.032265
+		},
+		{
+			"name": "Oficina de Cartuchos",
+			"address": "Av. Ewerton da Cosa Xavier s/nº - Lote 1 - Quadra 80 - Itaipu - Niterói, RJ",
+			"tels": [],
+			"lat": -22.940206,
+			"long": -43.02775
+		},
+		{
+			"name": "RFSom Assistência Técnica",
+			"address": "R. Noronha Torrezão, 21 - Santa Rosa - Niterói, RJ",
+			"tels": [
+				"(21) 2710-4382"
+			],
+			"lat": -22.89805520670746,
+			"long": -43.103134650000015
+		},
+		{
+			"name": "Eletrônica Johenpess",
+			"address": "R. Lopes Trovão, 471 - Icaraí - Niterói, RJ",
+			"tels": [
+				"(21) 2711-7720"
+			],
+			"lat": -22.899440106707928,
+			"long": -43.10380459999999
+		},
+		{
+			"name": "Posto GNV 24h",
+			"address": "R. Noronha Torrezão, esquina com 22 de novembro - Santa Rosa - Niterói, RJ",            
+			"tels": [],
+			"lat": -22.889317,
+			"long": -43.095814
+		},
+		{
+			"name": "Escola Aldeia Curumim",
+			"address": "R. Prof. Dalton Gonçalves, 436 - Pendotiba - Niterói, RJ",
+			"tels": [
+				"(21) 2616-1326"
+			],
+			"lat": -22.895128,
+			"long": -43.034724
+		},
+		{
+			"name": "Farmácia Riodades",
+			"address": "R. Riodades, 148 - Fonseca - Niterói, RJ",
+			"tels": [
+				"(21) 3603-7000"
+			],
+			"lat": -22.878284056701006,
+			"long": -43.082863950000046
+		},
+		{
+			"name": "Ampla (Assaí - Alcantara)",
+			"address": "R. Alfredo Backer, 605 - Alcantara, RJ",            
+			"tels": [],
+			"lat": -22.819969,
+			"long": -43.004637
+		},
+		{
+			"name": "Ampla (Engenhoca - Niterói)",
+			"address": "Av. Professor João Brasil, s/nº - Engenhoca - Niterói, RJ",            
+			"tels": [],
+			"lat": -22.87042,
+			"long": -43.093507
+		},
+		{
+			"name": "Ampla (Centro - Niterói)",
+			"address": "Av. Visconde do Rio Branco, 731 - Centro - Niterói, RJ",            
+			"tels": [],
+			"lat": -22.897427,
+			"long": -43.12775
+		},
+		{
+			"name": "Ampla (Clin - Icaraí - Niterói)",
+			"address": "R. Jornalista Irineu Marinho, s/nº - Icaraí - Niterói, RJ",            
+			"tels": [],
+			"lat": -22.9097,
+			"long": -43.10399
+		},
+		{
+			"name": "Ampla (Clin - Largo da Batalha - Niterói)",
+			"address": "R. Leonor Glória, s/nº - Largo da Batalha - Niterói, RJ",            
+			"tels": [],
+			"lat": -22.906039806710087,
+			"long": -43.063744799999995
+		},
+		{
+			"name": "Ampla (Centro - São Gonçalo)",
+			"address": "R. Feliciano Sodré, 230 - Centro - São Gonçalo, RJ",            
+			"tels": [],
+			"lat": -22.82353510668312,
+			"long": -43.04703870000003
+		},
+		{
+			"name": "Ampla (Boa Vista - São Gonçalo)",
+			"address": "R. Joaquim de Oliveira, lote 308 - Boa Vista - São Gonçalo, RJ",            
+			"tels": [],
+			"lat": -22.813253,
+			"long": -43.058209
+		},
+		{
+			"name": "e-lixo-rj",
+			"address": "R. Angelo Miguel, 385 - Maria da Graça - Rio de Janeiro, RJ",            
+			"tels": [
+				"(21) 3474-2901",				
+				"(21) 7896-0040"
+			],
+			"lat": -22.88607,
+			"long": -43.265158
+		}
+	]
+}
